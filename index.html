@@ -5,20 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <title>GitHub Users Search</title>
 </head>
 <body>
-
-  <form>
-    <input type="text" name="username" placeholder="Enter GitHub Username">
-    <button type="submit">Search</button>
-  </form>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <input id="usrnm" type="text" name="username" placeholder="Enter GitHub Username">
+          <button type="submit">Search</button>
+          <button id="reset">RESET</button>
+          <p>
+            <input type="radio" name="searchBy" value="users">By Name
+            <input type="radio" name="searchBy" value="orgs">By Org
+          </p>
+        </form>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="profilePic">
+            <!--jquery puts the picture in here!-->
+        </div>
+      </div>
+    </div>
   <ul id="results-list">
 
   </ul>
-
+  </div>
 </body>
 </html>
